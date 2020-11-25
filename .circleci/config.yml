@@ -9,10 +9,6 @@ jobs:
 
     steps:
       # Step 1: obtain repo from GitHub
-      - run:
-          name: ssh
-          command: |
-            ssh -T git@github.com
       - checkout
       # Step 2: create virtual env and install dependencies
       - run:
